@@ -1,0 +1,12 @@
+torch
+transformers
+sentence-transformers
+datasets
+evaluate
+sentencepiece
+accelerate
+peft
+wandb
+fairscale
+llama
+einops
