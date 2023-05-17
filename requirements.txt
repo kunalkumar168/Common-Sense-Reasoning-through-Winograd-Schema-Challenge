@@ -1,0 +1,7 @@
+transformers
+dataset
+evalaute
+sentence-transformer
+scikit-learn
+accelerate
+sentencepiece

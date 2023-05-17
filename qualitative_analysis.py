@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-original_path = '/Users/kunal/Downloads/685_results/outputs/' #flan-t5-base_0_shot_cot_incontext.csv
+original_path = './outputs_new/' #flan-t5-base_0_shot_cot_incontext.csv
 files_path = []
 
 for dirpath, dnames, fnames in os.walk(original_path):

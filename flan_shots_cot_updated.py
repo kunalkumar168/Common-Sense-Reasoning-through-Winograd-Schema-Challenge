@@ -19,11 +19,14 @@ import json
 import time
 
 """Example:
+How does the sentence end?
 
 Jane knocked on Susan’s door, but there was no answer.
+
 OPTIONS:
 - Jane was out.
 - Susan was out
+Output:
 """
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
