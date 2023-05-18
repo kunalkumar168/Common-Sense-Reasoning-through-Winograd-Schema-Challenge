@@ -2,7 +2,7 @@
 """\
 Authors: Kunal Kumar, Jay Sinha
 
-Usage: python3 flan_shots_cot.py
+Usage: python3 flan_shots_cot_updated.py
 """
 import torch
 import pandas as pd
@@ -243,7 +243,7 @@ if __name__ == "__main__":
         type=str,
         nargs='?',
         const=1,
-        default="/home/kunalkumar_umass_edu/",
+        default="/home/jsinha_umass_edu/cs685/",
         help="Home Directory where wsc, DPR Fixed Set, All In Context Examples files are present",
     )
 
@@ -272,11 +272,10 @@ if __name__ == "__main__":
         'flan-t5-small': 'google/flan-t5-small',
         'flan-t5-base': 'google/flan-t5-base',
         'flan-t5-large': 'google/flan-t5-large',
-        'flan-t5-xl' : 'google/flan-t5-xl',
         #'flan-t5-xl': '/work/pi_mccallum_umass_edu/jsinha_umass_edu/flan-t5-xl',
         # 'flan-t5-xxl': '/work/pi_mccallum_umass_edu/jsinha_umass_edu/flan-t5-xxl'
     }
-    for i in ['cot-top5']: #'cot', 'normal'
+    for i in ['cot', 'normal', 'cot-top5']:
         run_model_test(given_path, models, i)
 
     
